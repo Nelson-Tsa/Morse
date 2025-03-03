@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traducteur de Morse</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Traducteur de Morse</h1>
+            <p class="subtitle">Traduisez facilement du texte en code Morse et inversement</p>
+        </header>
+
+        <main>
+            <div class="translator-section">
+                <h2>Texte vers Morse</h2>
+                <form id="form1" class="translator-form">
+                    <input type="text" id="input1" placeholder="Entrez votre texte ici..." autocomplete="off">
+                    <button type="submit" class="translate-btn">Traduire</button>
+                </form>
+                <div class="output-container">
+                    <p class="output-label">Résultat en Morse :</p>
+                    <p id="outputMorse" class="output-text"></p>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="translator-section">
+                <h2>Morse vers Texte</h2>
+                <form id="form2" class="translator-form">
+                    <input type="text" id="input2" placeholder="Entrez votre code Morse ici... (utilisez des espaces entre les caractères)" autocomplete="off">
+                    <button type="submit" class="translate-btn">Traduire</button>
+                </form>
+                <div class="output-container">
+                    <p class="output-label">Résultat en texte :</p>
+                    <p id="outputText" class="output-text"></p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Créé avec passion | <span class="morse-text">.-.. . / -- --- .-. ... . / . ... - / ..- -. / .- .-. -</span></p>
+        </footer>
+    </div>
+</body>
+</html>
