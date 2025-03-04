@@ -51,8 +51,8 @@ function AlphabetVersMorse(alphabet) {
 formulaire.addEventListener("submit", (e) => {
     e.preventDefault();
     input1Value = input1.value;
+    input1Value = input1Value.toUpperCase();
     console.log(input1Value);
-    
     document.getElementById("outputMorse").textContent = AlphabetVersMorse(input1Value);
 });
 
@@ -93,8 +93,9 @@ const morseToLatin = {
 
 function MorseVersAlphabet(morse) {
     let alphabet = morse.split(' ').map(Morse).join('');
-    console.log(alphabet);
-    return alphabet;
+    let textForme = alphabet.charAt(0).toUpperCase() + alphabet.slice(1).toLowerCase();
+    console.log(textForme);
+    return textForme;
 }
  
 form2.addEventListener("submit", (e) => {
