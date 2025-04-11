@@ -128,3 +128,4 @@ MorseVersAlphabet("... --- ..."); // --> "SOS"
 
 // reverse("SOS"); // --> "... --- ..."
 // reverse("... --- ..."); // --> "SOS"
+module.exports = { AlphabetVersMorse, MorseVersAlphabet };
